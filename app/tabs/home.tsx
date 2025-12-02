@@ -10,7 +10,7 @@ export default function HomeScreen() {
     setLoading(true);
     try {
       const res = await axios.get("https://api.quotable.io/random");
-      setQuote(`${res.data.content} — ${res.data.author}`);
+      setQuote(`${res.data.content} - ${res.data.author}`);
     } catch (e) {
       Alert.alert("Chyba", "Nepodařilo se načíst citát");
     } finally {
@@ -31,7 +31,7 @@ export default function HomeScreen() {
         alignItems: "center",
       }}
     >
-      <Text style={{ fontSize: 24, marginBottom: 20 }}>Home Screen</Text>
+      <Text style={{ fontSize: 24, marginBottom: 20 }}>Vítejte v todo-rn</Text>
 
       {loading ? (
         <ActivityIndicator size="large" color="#0000ff" />

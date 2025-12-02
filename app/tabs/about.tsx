@@ -23,12 +23,12 @@ export default function AboutScreen() {
       <Text style={styles.subtitle}>Author:</Text>
       <Text style={styles.text}>Michal Mikl</Text>
 
-      <Text style={styles.subtitle}>GitHub / Contact:</Text>
+      <Text style={styles.subtitle}>GitHub</Text>
       <Text
         style={[styles.text, styles.link]}
-        onPress={() => Linking.openURL("https://github.com/tvuj-github")}
+        onPress={() => Linking.openURL("https://github.com/IonSibRe/todo-rn")}
       >
-        https://github.com/tvuj-github
+        https://github.com/IonSibRe/todo-rn
       </Text>
     </ScrollView>
   );

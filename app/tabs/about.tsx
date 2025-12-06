@@ -16,9 +16,10 @@ export default function AboutScreen() {
       <Text style={styles.text}>• Mazání úkolů</Text>
       <Text style={styles.text}>• Zobrazení data vytvoření úkolu</Text>
       <Text style={styles.text}>
-        • Ukládání do AsyncStorage (trvalé ukládání)
+        • Ukládání do AsyncStorage (trvalé ukládání){" "}
       </Text>
       <Text style={styles.text}>• Načítání dat z REST API (Home Screen)</Text>
+      <Text style={styles.text}>• Ukázka aktuálního času (Home Screen)</Text>
 
       <Text style={styles.subtitle}>Author:</Text>
       <Text style={styles.text}>Michal Mikl</Text>

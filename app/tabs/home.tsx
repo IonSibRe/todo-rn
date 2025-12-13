@@ -30,12 +30,12 @@ export default function HomeScreen() {
   const fetchQuote = async () => {
     setLoading(true);
     try {
-      const res = await axios.get("https://api.quotable.io/random");
-      const final = `${res.data.content} - ${res.data.author}`;
+      const res = await axios.get("https://dummyjson.com/quotes/random");
+
+      const final = `${res.data.quote} - ${res.data.author}`;
 
       setQuote(final);
       await saveLastQuote(final);
-
       setOffline(false);
     } catch (e) {
       setOffline(true);
